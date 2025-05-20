@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 
-use App\Hello;
+use App\General;
 
-$hello = new Hello();
-echo $hello->sayHello();
+$hello = new General();
+echo $hello->general();

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upload Multiple Images</title>
+  </head>
+  <body>
+    <h2>Select Multiple Images (Max 3MB each)</h2>
+    <form action="src/uploads.php" method="post" enctype="multipart/form-data">
+      <input
+        type="file"
+        name="images[]"
+        accept="image/*"
+        multiple
+        required
+      /><br /><br />
+      <button type="submit">Upload Images</button>
+    </form>
+  </body>
+</html>
