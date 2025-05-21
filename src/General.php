@@ -17,4 +17,9 @@ class General
         <a href='src/session.php'>Session</a> <br/> 
         <a href='src/person_form.php'>Person</a> ";
     }
+
+    public function main()
+    {
+        return "<a href='upload.html'>Upload Image</a> <br/>";
+    }
 }
