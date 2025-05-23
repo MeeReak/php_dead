@@ -20,6 +20,12 @@ class General
 
     public function main()
     {
-        return "<a href='upload.html'>Upload Image</a> <br/>";
+        return "<a href='upload.html'>Upload Image</a> <br/>
+        <a href='uploads.html'>Upload Images</a> <br/>
+        <a href='upload_in_one.php'>Upload Image In One</a> <br/>
+        <a href='src/kaidou/user.php'>Create User</a> <br/>
+        <a href='src/kaidou/student.php'>Find Student</a> <br/>
+        <a href='src/kaidou/cookie.php'>Cookie</a> <br/>
+        <a href='src/kaidou/session.php'>Session</a> <br/>";
     }
 }

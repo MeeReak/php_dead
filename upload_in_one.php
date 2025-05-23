@@ -1,7 +1,6 @@
 <?php
 
-//check method
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //check if the image is existed
     if (isset($_FILES['image'])) {
         //get the file
@@ -39,7 +38,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "No file uploaded.";
         exit;
     }
-} else {
-    echo "Method is not allowed!";
-    exit;
 }
+?>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upload in one file</title>
+</head>
+
+<body style="background: grey">
+
+</body>
+<form method="post" enctype="multipart/form-data">
+    <label>Select Image (Maximum 3MB):</label><br>
+    <input type="file" name="image" accept="image/*" require><br><br>
+    <button type="submit">Upload</button>
+</form>
+
+</html>

@@ -49,19 +49,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'] ?? '';
     $email = $_POST['email'] ?? '';
 
-    // $stmt = $conn->prepare("SELECT * FROM Users WHERE Name = ? AND Email = ?");
-    // $stmt->bind_param("ss", $name, $email);
-    // $stmt->execute();
-
-    // $result = $stmt->get_result();
-
-    // if ($result->num_rows > 0) {
-    //     $message = "Found!";
-    // } else {
-    //     $message = "Not Found!";
-    // }
-
-    // $stmt->close();
     $sql = "SELECT * FROM Users WHERE Name = '$name' AND Email = '$email'";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {

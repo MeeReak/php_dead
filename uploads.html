@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upload Multiple Images</title>
+  </head>
+  <body style="background: grey">
+    <form
+      action="src/kaidou/uploads.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label>Select Multiple Images (Max 3MB each)</label><br />
+      <input
+        required
+        type="file"
+        multiple
+        accept="image/*"
+        name="images[]"
+      /><br /><br />
+      <button>Upload</button>
+    </form>
+  </body>
+</html>
