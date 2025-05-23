@@ -30,11 +30,6 @@ function getAllUsers()
 function insertUser($name, $email)
 {
     $conn = connectDB();
-    // $stmt = $conn->prepare("INSERT INTO persons (Name, City) VALUES (?, ?)");
-    // $stmt->bind_param("ss", $name, $email);
-    // $stmt->execute();
-    // $stmt->close();
-    // $conn->close();
     $sql = "INSERT INTO persons (Name, City) VALUES ('$name', '$email')";
     $conn->query($sql);
     $conn->close();
